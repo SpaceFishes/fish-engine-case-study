@@ -1,0 +1,131 @@
+# Fish Engine Devlog
+
+Note: AI was used to help write this devlog to save time.
+
+## Checkpoint 1 — Project Setup
+
+Created the basic C++20 project structure with CMake and Ninja.
+
+## Checkpoint 2 — App Class
+
+Moved the main engine startup code into an `App` class.
+
+## Checkpoint 3 — Engine Loop
+
+Added a basic engine loop with frame timing.
+
+## Checkpoint 4 — Fixed Timestep
+
+Added fixed timestep logic for stable physics updates.
+
+## Checkpoint 5 — Vec2 Math
+
+Created a simple 2D vector math system.
+
+## Checkpoint 6 — RigidBody2D
+
+Added position, velocity, mass, and force integration.
+
+## Checkpoint 7 — PhysicsWorld
+
+Created a physics world to store and update bodies.
+
+## Checkpoint 8 — Rotation and Torque
+
+Added rotation, angular velocity, and torque.
+
+## Checkpoint 9 — Direction From Rotation
+
+Added forward direction calculation from ship rotation.
+
+## Checkpoint 10 — Ship Class
+
+Created a `Ship` object that controls a physics body.
+
+## Checkpoint 11 — Ship Controls
+
+Added a control struct for thrust and rotation input.
+
+## Checkpoint 12 — Damping
+
+Added linear and angular damping to smooth motion.
+
+## Checkpoint 13 — Reverse and Brake
+
+Added reverse thrust and braking forces.
+
+## Checkpoint 14 — SDL3 Window
+
+Added an SDL3 window and renderer.
+
+## Checkpoint 15 — Triangle Ship Rendering
+
+Drew a basic triangle ship on screen.
+
+## Checkpoint 16 — Physics Ship Rendering
+
+Connected the rendered ship to the physics body.
+
+## Checkpoint 17 — Keyboard Input
+
+Added real keyboard input for ship control.
+
+## Checkpoint 18 — Camera Follow
+
+Added a camera that follows the ship.
+
+## Checkpoint 19 — Smooth Camera
+
+Made the camera follow smoothly instead of snapping.
+
+## Checkpoint 20 — Renderer2D
+
+Moved drawing code into a separate renderer module.
+
+## Checkpoint 21 — Input Module
+
+Moved SDL input handling into its own module.
+
+## Checkpoint 22 — Window Module
+
+Moved SDL window and renderer lifetime into a window module.
+
+## Checkpoint 23 — GameWorld
+
+Moved game simulation setup into a `GameWorld` module.
+
+## Checkpoint 24 — Time Module
+
+Moved frame timing and fixed timestep logic into a `Time` module.
+
+## Checkpoint 25 — Debug Grid
+
+Added a world-space debug grid.
+
+## Checkpoint 26 — Strafe Controls
+
+Added left and right strafe thrusters.
+
+## Checkpoint 27 — Debug Vectors
+
+Added forward, velocity, and body-center debug visuals.
+
+## Checkpoint 28 — Camera Zoom
+
+Added zoom controls using mouse wheel and keyboard.
+
+## Checkpoint 29 — Asteroid Object
+
+Added an asteroid object with debug circle rendering.
+
+## Checkpoint 30 — Collision Detection
+
+Added circle collision detection between the ship and asteroid.
+
+## Checkpoint 31 — Collision Response
+
+Added simple collision response so the ship bounces off the asteroid.
+
+## Checkpoint 32 — Collision2D Module
+
+Moved reusable collision code into a physics collision module.

@@ -1,0 +1,176 @@
+# Fish Engine Low-Level Roadmap
+
+Note: This roadmap was based on my own project notes. AI was used to shorten and organize it to save time.
+
+## Phase 1 — Platform Layer
+
+Keep the engine foundation clean and cross-platform.
+
+* SDL window setup
+* Renderer setup
+* Input polling
+* Platform detection
+* Startup/shutdown logs
+* Linux support
+* Windows support
+
+## Phase 2 — Main Loop and Time
+
+Make the engine loop stable before adding bigger systems.
+
+* Main loop
+* Frame timing
+* Fixed timestep
+* Delta time
+* Accumulator logic
+* Frame time clamp
+* Basic timing logs
+
+## Phase 3 — Math Foundation
+
+Build the basic math tools needed for a 2D engine.
+
+* Vec2
+* Dot product
+* Length
+* Normalization
+* Rotation helpers
+* Direction from angle
+* Lerp
+
+## Phase 4 — Physics Core
+
+Keep improving the custom physics system.
+
+* RigidBody2D
+* Position and velocity
+* Forces
+* Torque
+* Mass
+* Moment of inertia
+* Linear damping
+* Angular damping
+
+## Phase 5 — Collision System
+
+Move collision logic into reusable low-level modules.
+
+* Circle colliders
+* Collision result data
+* Collision normals
+* Penetration depth
+* Static collision response
+* Dynamic collision response later
+* Multiple collision pairs later
+
+## Phase 6 — Rendering Internals
+
+Keep the renderer simple but structured.
+
+* Renderer2D
+* World-to-screen conversion
+* Camera transform
+* Debug lines
+* Debug circles
+* Debug grid
+* Draw order cleanup
+* Texture rendering later
+
+## Phase 7 — Input Abstraction
+
+Keep SDL input separate from game logic.
+
+* Keyboard state
+* Mouse wheel
+* Ship controls
+* Pressed/held/released states later
+* Control mapping later
+* Controller support later
+
+## Phase 8 — Debug Tools
+
+Make the engine easier to inspect while developing.
+
+* Platform logs
+* Frame logs
+* Physics logs
+* Debug grid
+* Collision circles
+* Forward vector
+* Velocity vector
+* Object count logs
+* Toggle debug draw later
+
+## Phase 9 — Object Management
+
+Make the world handle more than one object cleanly.
+
+* Player ship
+* Asteroids
+* Projectiles
+* Object IDs
+* Object creation
+* Object deletion
+* Object lifetime tracking
+* Update order
+
+## Phase 10 — Memory and Ownership
+
+Start making the engine safer and more efficient.
+
+* Clear ownership rules
+* RAII cleanup
+* Non-copyable resource classes
+* Fewer per-frame allocations
+* Safer handles
+* Object pools later
+
+## Phase 11 — Performance Structure
+
+Prepare the code for more objects later.
+
+* Contiguous storage
+* Less pointer-heavy code
+* ID-based access
+* Broadphase collision later
+* Spatial grid later
+* Data-oriented cleanup later
+
+## Phase 12 — Assets and Textures
+
+Add real visuals after the debug systems are reliable.
+
+* Image loading
+* Texture creation
+* Texture cleanup
+* Asset handles
+* Asset cache
+* Missing texture fallback
+* Sprite rendering
+
+## Phase 13 — Build and GitHub Cleanup
+
+Keep the project easy to build and share.
+
+* Clean CMake
+* Debug build
+* Release build
+* Compiler warnings
+* compile_commands.json
+* .gitignore
+* README
+* Linux testing
+* Windows testing
+
+## Phase 14 — Small Playable Prototype
+
+Use the engine to make a small test game.
+
+* Physics ship
+* Asteroid field
+* Projectiles
+* Collisions
+* Basic damage
+* Restart loop
+* Performance testing
+* Debug tools always available
