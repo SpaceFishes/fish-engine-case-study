@@ -2,7 +2,7 @@
 
 Fish Engine is my personal custom 2D game engine project built in C++. I am building it to learn engine architecture, project organization, platform detection, debugging, rendering basics, and long-term software development.
 
-The full source code is private because this is an active personal project. This repository is a public case study that shows the project goals, design decisions, screenshots, development logs, and technical progress without exposing the private codebase.
+The full source code is private because this is an active personal project. This repository is a public case study that shows the project goals, design decisions, screenshots, development logs, and technical progress without exposing the private code.
 
 ## What this project shows
 
