@@ -22,13 +22,6 @@ The current focus is building a clean foundation for the engine. I am working on
 
 This is an active long-term personal project, so I am keeping the source code private while I continue building it. I am happy to discuss the architecture, design choices, technical problems, and development process in an interview.
 
-## Documentation
-
-- [Architecture Notes](docs/architecture.md)
-- [Development Log](docs/dev-log.md)
-- [Roadmap](docs/roadmap.md)
-- [Technical Challenges](docs/technical-challenges.md)
-
 ## Media
 
 Screenshots and short demos will be added as the project develops.
