@@ -1,0 +1,17 @@
+## Checkpoint — Collision Physics
+
+Added a low-level `Collision2D` physics module for circle collision work.
+
+What changed:
+
+* Added reusable circle collider data
+* Added collision result data
+* Added circle overlap detection
+* Added collision normal calculation
+* Added penetration depth calculation
+* Added simple collision response
+* Added dynamic collision response testing
+* Ship can now collide with an asteroid
+* Asteroid can react to impact instead of acting only like a wall
+
+This checkpoint focused on separating collision physics from the game world so the engine can later support more objects, projectiles, and broader physics testing.
